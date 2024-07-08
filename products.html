@@ -4,112 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style> 
-        
-        header {
-    background-color: #7a7c97;
-    padding: 1em;
-    text-align: center;
-    font-size: 18px;
-}
-        
-body {
-    margin: 0;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    padding: 0;
-}
-        
-        section {
-    background-color: #f7f7f7;
-    padding: 2em;
-    margin-bottom: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-a {
-    text-decoration: none;
-    color:white;
-}
-
-a:hover {
-    color:white;
-
-
-}
-
-h1 {
-    font-size: 75px;
-    margin-bottom: 10px;
-    text-align: center;
-    font-family: oswald;
-}
-
-.titulos {
-    font-size: 30px ;
-
-}
-
-h2 {
-    font-size: 40px;
-    text-align: center;
-}
-
-.flex {
-    display: flex;
-    background-color: #ffffff;
-
-}
-
-div {
-  color: black;
-  margin: 30px;
-  padding: 5px;
-  border-radius: 5px;
-    border: 1px solid #ffffff;
-    text-align: center;
-    width: 30%;
-}
-
-h6 {
-    font-size: 15px;
-
-}
-
-button {
-    background-color: #ffffff;
-    padding: 5px;
-    font-size: 20px;
-    padding-left: 7px;
-    padding-right: 7px;
-}
-
-
-</style>
+    <link rel="stylesheet" href="products.css"/>
 </head>
 
 
 <body>
     <h1>Pershka</h1>
     <header> 
-            <h5><a href="index.html">Home</a></h5>
-            <h5><a href="products.html">Products</a></h5>
-            <h5><a href="contact.html">Contact us</a></h5>
+        <ul>
+            <li id="li1"><a href="index.html">Home</a></li>
+            <li id="li2"><a href="products.html">Products</a></li>
+            <li id="li3"><a href="contact.html">Contact</a></li>
+        </ul>
+        <div id="cart" class="kim">
+            <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 4h1.5L9 16m0 0h8m-8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-8.5-3h9.25L19 7H7.312"/>
+            </svg>
+            <span id="cart-count">0</span>
+        </div>
     </header>
+    
+    <div class="buscador">
+    <input type="text" id="productSearch" placeholder="Search for products...">
+    </div>
+
 
     <section id="products">
+    </br>
+    </br>
+    </br>
     <h2>Products</h2>
     </br>
     <h3 class="titulos">Hoodies</h3>
     <section class="flex">
-        <div>
-        <img src="8998_buzo_frisado_con_capucha2.png" width="380">
+        <div id="NAHU1" class="gordito">
+        <img src="buzo1.png" width="380">
         </br>
         <button class="btn-1">Buy</button>
         <h6>Simple Butter-Colored Hoddie</h6>
         <p>A cozy, butter-colored hoodie featuring a soft, plush interior and a classic, relaxed fit</p>
         <p>$32.000</p>
         </div>
-        <div>
+        <div id="NAHU2" class="gordito">
         <img src="buzo-hombre-mapi-negro-7003-frente-gef.webp" width="315">
         </br>
         <button class="btn-2">Buy</button>
@@ -117,8 +53,8 @@ button {
         <p>A sleek, black hoodie with a minimalist design, offering a comfortable fit and versatile style</p>
         <p>$35.000</p>
         </div>
-        <div>
-        <img src="d8d5039f-9455-42a6-aac7-b1b78454c442-97b118dddc18f47c0017170858166022-480-0.jpg" width="300">
+        <div id="NAHU3" class="gordito">
+        <img src="buzo2.jpg" width="300">
         </br>
         <button class="btn-3">Buy</button>
         <h6>Oversized Ash-Colored Hoddie with Print </h6>
@@ -128,7 +64,7 @@ button {
     </section>
     <h3 class="titulos">Jackets</h3>
     <section class="flex">
-        <div>
+        <div id="NAHU4" class="gordito">
         <img src="LEG-NEON-baja-90.jpg" width="300">
         </br>
         <button class="btn-4">Buy</button>
@@ -136,15 +72,15 @@ button {
         <p>This jacket has minimalist design, offering a comfortable fit and versatile style, ideal for everyday wear</p>
         <p>$52.000</p>
         </div>
-        <div>
-        <img src="21217401sau242-51-78daa043383031c8b716859856972189-640-0.jpg" width="450">
+        <div id="NAHU5" class="gordito">
+        <img src="campera2.jpg" width="450">
         </br>
         <button class="btn-5">Buy</button>
         <h6>Simple Cream-Colored Jacket</h6>
         <p>A simple cream-colored jacket with a clean design. A versatile addition to your wardrobe, perfect for layering</p>
         <p>$55.000</p>
         </div>
-        <div>
+        <div id="NAHU6" class="gordito">
         <img src="D_659360-MLA76268353483_052024-O.jpg" width="300">
         </br>
         <button class="btn-6">Buy</button>
@@ -155,7 +91,7 @@ button {
     </section>
     <h3 class="titulos">Sweaters</h3>
     <section class="flex">
-        <div>
+        <div id="NAHU7" class="gordito">
         <img src="226875-500-auto.webp" width="350">
         </br>
         <button class="btn-7">Buy</button>
@@ -163,7 +99,7 @@ button {
         <p>A soft and comfortable simple ash-colored sweater with a classic, timeless design.</p>
         <p>$34.000</p>
         </div>
-        <div>
+        <div id="NAHU8" class="gordito">
         <img src="226815-800-auto.webp" width="350">
         </br>
         <button class="btn-8">Buy</button>
@@ -171,7 +107,7 @@ button {
         <p>An elegant design. Its soft and comfortable fabric makes it perfect for both casual and semi-formal occasions.</p>
         <p>$34.000</p>
         </div>
-        <div>
+        <div id="NAHU9" class="gordito">
         <img src="M60C4411_1 (1).jpg" width="445">
         </br>
         <button class="btn-9">Buy</button>
@@ -181,4 +117,13 @@ button {
         </div>
     </section>
     </section>
+    <div id="cart-modal" style="display: none;">
+        <h2>Shopping Cart</h2>
+        <div id="cart-items"></div>
+        <p id="total-price"></p>
+        <button id="checkout">Checkout</button>
+        <button id="close-cart">Close</button>
+    </div>
+        <script src="products.js"></script>
     </body>
+    </html>

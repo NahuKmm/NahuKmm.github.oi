@@ -14,10 +14,14 @@ body {
 
 header {
     background-color: #7a7c97;
-    padding: 1em;
     text-align: center;
-    font-size: 18px;
+    font-size: 22px;
+    display: flex;
+    justify-content: center; 
+    gap: 80px; 
+    padding: 6px; 
 }
+
 
 h2 {
     font-size: 40px;
@@ -67,6 +71,49 @@ a:hover {
 }
 
 
+ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    gap: 20px;
+    font-size: large;
+    padding-top: 10px;
+}
+
+
+ul li a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+
+li {
+    margin-bottom: 10px;
+}
+
+
+#li1 {
+    margin-left:30px;
+}
+
+
+#li2 {
+    margin-left: 60px;
+}
+
+
+#li3 {
+    margin-left:70px
+}
+
+
 
 
 
@@ -76,9 +123,12 @@ a:hover {
     <h1>Pershka</h1>
     <img src="WhatsApp Image 2024-06-13 at 22.47.28 (1).jpeg" width="650" class="imagen1">
     <header>
-            <h5><a href="">Home</a></h5> 
-            <h5><a href="products.html">Products</a></h5> 
-            <h5><a href="contact.html">Contact us</a></h5> 
+        <ul>
+            <li id="li1"><a href="index.html">Home</a></li>
+            <li id="li2"><a href="products.html">Products</a></li>
+            <li id="li3"><a href="contact.html">Contact</a></li>
+        </ul>
+
     </header>
     <main> 
         <section id="home">

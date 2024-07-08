@@ -44,7 +44,12 @@ header {
     padding: 1em;
     text-align: center;
     font-size: 18px;
+    display: flex;
+    justify-content: center; 
+    gap: 80px; 
+    padding: 6px; 
 }
+
 
 h1 {
     font-size: 75px;
@@ -63,6 +68,48 @@ h3 {
 
 }
 
+ul {
+    display: flex;
+    list-style: none;
+    padding: 10px;
+    margin: 0 auto;
+    gap: 20px;
+    font-size: large;
+    padding-top: 10px;
+}
+
+
+ul li a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+
+li {
+    margin-bottom: 10px;
+}
+
+
+#li1 {
+    margin-left:30px;
+}
+
+
+#li2 {
+    margin-left: 60px;
+}
+
+
+#li3 {
+    margin-left:70px
+}
+
 </style>
 
 
@@ -71,9 +118,12 @@ h3 {
 <body>
     <h1>Pershka</h1>
     <header> 
-            <h5><a href="index.html">Home</a></h5>
-            <h5><a href="products.html">Products</a></h5>
-            <h5><a href="contact.html">Contact us</a></h5>
+        <ul>
+            <li id="li1"><a href="index.html">Home</a></li>
+            <li id="li2"><a href="products.html">Products</a></li>
+            <li id="li3"><a href="contact.html">Contact</a></li>
+        </ul>
+
     </header>
     <section id="contact">
         <h2>Contact us</h2>
